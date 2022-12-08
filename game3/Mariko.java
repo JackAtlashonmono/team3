@@ -31,5 +31,11 @@ public class Mariko extends Actor
             setRotation(0);
             move(1);
         }
+        
+        Actor actor = getOneIntersectingObject( Kurio.class );
+        if( actor != null ){
+            //Kurioとぶつかった時の処理
+            Greenfoot.stop();
+        } 
     }
 }
