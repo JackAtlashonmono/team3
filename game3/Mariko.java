@@ -15,19 +15,19 @@ public class Mariko extends Actor
     public void act()
     {
         // Add your action code here.
-        if( Greenfoot.isKeyDown( "up" ) ){
+        if( Greenfoot.isKeyDown( "W" ) ){
             setRotation(-90);
             move(1);
         }
-        if( Greenfoot.isKeyDown( "down" ) ){
+        if( Greenfoot.isKeyDown( "S" ) ){
             setRotation(90);
             move(1);
         }
-        if( Greenfoot.isKeyDown( "left" ) ){
+        if( Greenfoot.isKeyDown( "A" ) ){
             setRotation(180);
             move(1);
         }
-        if( Greenfoot.isKeyDown( "right" ) ){
+        if( Greenfoot.isKeyDown( "D" ) ){
             setRotation(0);
             move(1);
         }
