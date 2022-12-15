@@ -1,6 +1,10 @@
 #Greenfoot project file
 class.Kurio.image=Kurio\ (1).png
+<<<<<<< HEAD
 class.Mariko.image=Mariko\ (2)\ (1)\ (1).png
+=======
+class.Mariko.image=Mariko.png
+>>>>>>> 2ec4e3ec6ba3c7b2807c112b06c405e53be6f1ef
 class.MyWorld.image=bg_natural_mori\ (1).jpg
 dependency1.from=MyWorld
 dependency1.to=Mariko
@@ -11,10 +15,17 @@ dependency2.type=UsesDependency
 dependency3.from=Mariko
 dependency3.to=Kurio
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=806
 editor.fx.0.width=1025
 editor.fx.0.x=771
 editor.fx.0.y=101
+=======
+editor.fx.0.height=829
+editor.fx.0.width=816
+editor.fx.0.x=955
+editor.fx.0.y=90
+>>>>>>> 2ec4e3ec6ba3c7b2807c112b06c405e53be6f1ef
 height=635
 package.numDependencies=3
 package.numTargets=3
@@ -31,7 +42,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=50
+simulation.speed=66
 target1.height=70
 target1.name=Kurio
 target1.showInterface=false
@@ -54,7 +65,14 @@ target3.width=80
 target3.x=0
 target3.y=0
 version=3.0.0
+<<<<<<< HEAD
 width=1045
 world.lastInstantiated=MyWorld
 xPosition=0
 yPosition=0
+=======
+width=1067
+world.lastInstantiated=MyWorld
+xPosition=0
+yPosition=76
+>>>>>>> 2ec4e3ec6ba3c7b2807c112b06c405e53be6f1ef
