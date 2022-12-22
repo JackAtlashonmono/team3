@@ -18,25 +18,29 @@ public class Mariko extends Actor
          gravity--;
          setLocation(getX(), getY() - gravity);
          checkForJump();
-        // Add your action code here.
+        // Add your action code here
         Actor actor = getOneIntersectingObject( Kurio.class );
         if( actor != null ){
             //Kurioとぶつかった時の処理
             ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
             Greenfoot.stop();
         } 
+
         if( Greenfoot.isKeyDown( "A" ) ){
             setRotation(0);
-            move(-1);
+            move(-3);
         }
         if( Greenfoot.isKeyDown( "D" ) ){
             setRotation(0);
-            move(1);
-        }
+            move(3);
+        } 
+        
     }
     private void checkForJump()
     {
+
         if( Greenfoot.isKeyDown("space"))
-            gravity = 20; // this will make the character jump
+            gravity = 15; // this will make the character jump
+
     }
 }
