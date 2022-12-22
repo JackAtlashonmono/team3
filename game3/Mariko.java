@@ -22,6 +22,7 @@ public class Mariko extends Actor
         Actor actor = getOneIntersectingObject( Kurio.class );
         if( actor != null ){
             //Kurioとぶつかった時の処理
+            ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
             Greenfoot.stop();
         } 
         if( Greenfoot.isKeyDown( "A" ) ){
