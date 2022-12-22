@@ -18,7 +18,7 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 450, 1); 
         
-        addObject( new Mariko(), 40, 400 );
-        addObject( new Kurio(), 800, 410 );
+        addObject( new Mariko(), 40, 410 );
+        addObject( new Kurio(), 740, 410 );
     }
 }
