@@ -25,6 +25,12 @@ public class Mariko extends Actor
             ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
             Greenfoot.stop();
         } 
+        actor = getOneIntersectingObject( flag.class );
+        if( actor != null ){
+            //flagとぶつかった時の処理
+            ((MyWorld)getWorld()).showTextEx("CLEAR", 400, 200, 128, true, Color.GREEN );
+            Greenfoot.stop();
+        } 
 
         if( Greenfoot.isKeyDown( "A" ) ){
             setRotation(0);
