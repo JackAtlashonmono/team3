@@ -20,6 +20,11 @@ public class Mariko extends Actor
          checkForJump();
         // Add your action code here
         Actor actor = getOneIntersectingObject( Kurio.class );
+        Actor under = getOneIntersectingObject( Ground.class );
+        if( under != null ){
+            //床とぶつかった時の処理
+            
+        }
         if( actor != null ){
             //Kurioとぶつかった時の処理
             ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
@@ -48,5 +53,10 @@ public class Mariko extends Actor
         if( Greenfoot.isKeyDown("space"))
             gravity = 15; // this will make the character jump
 
+    }
+    public boolean onGround()
+    {
+        Object under = getOneObjectAtOffset(0, getImage().getHeight()/2 + 2, Ground.class);
+        return under != null;
     }
 }
