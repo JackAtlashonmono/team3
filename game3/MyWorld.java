@@ -19,7 +19,8 @@ public class MyWorld extends World
         super(800, 450, 1); 
 
 
-        addObject( new Mariko(), 40, 410 );
+        addObject( new Mariko(), 40, 370 );
+        addObject( new sord(), 0, 360 );
         addObject( new Kurio(), 740, 410 );
         addObject( new flag(), 740, 410 );
 
