@@ -1,6 +1,6 @@
 #Greenfoot project file
 class.Kurio.image=Kurio\ (1).png
-class.Mariko.image=Mariko\ (2)\ (1)\ (1).png
+class.Mariko.image=mariko__1___1_-removebg-preview\ (1).png
 class.MyWorld.image=bg_natural_mori\ (1).jpg
 dependency1.from=MyWorld
 dependency1.to=Mariko
@@ -16,8 +16,8 @@ dependency4.to=Kurio
 dependency4.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
+editor.fx.0.x=785
+editor.fx.0.y=219
 height=635
 package.numDependencies=4
 package.numTargets=3
