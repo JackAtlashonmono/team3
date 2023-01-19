@@ -20,6 +20,7 @@ public class Mariko extends Actor
          checkForJump();
         // Add your action code here
         Actor actor = getOneIntersectingObject( Kurio.class );
+        Actor actor2 = getOneIntersectingObject( hanekurio.class );
         Actor under = getOneIntersectingObject( Ground.class );
         if( under != null ){
             //床とぶつかった時の処理
@@ -27,6 +28,11 @@ public class Mariko extends Actor
         }
         if( actor != null ){
             //Kurioとぶつかった時の処理
+            ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
+            Greenfoot.stop();
+        } 
+        if( actor2 != null ){
+            //haneurioとぶつかった時の処理
             ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
             Greenfoot.stop();
         } 

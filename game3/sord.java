@@ -16,10 +16,15 @@ public class sord extends Actor
          checkForJump();
         // Add your action code here
         Actor actor = getOneIntersectingObject( Kurio.class );
+        Actor actor2 = getOneIntersectingObject( hanekurio.class );
         if( actor != null ){
             //Kurioとぶつかった時の処理
             getWorld().removeObject( actor );
         } 
+        if( actor2 != null ){
+            //Kurioとぶつかった時の処理
+            getWorld().removeObject( actor2 );
+        }
 
         if( Greenfoot.isKeyDown( "A" ) ){
             setRotation(0);
