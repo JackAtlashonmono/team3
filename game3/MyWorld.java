@@ -39,7 +39,7 @@ public class MyWorld extends World
         int kurio_count = 3;
         for(int i=0; i<kurio_count; i++)
         {
-            int A = 100;
+            int A = 120;
             int B = 800;
             int C = A + (int)(Math.random()*((B-A)+1));
             addObject( new Kurio(), C, 410 );
