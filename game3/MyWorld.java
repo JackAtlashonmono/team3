@@ -26,9 +26,37 @@ public class MyWorld extends World
         //addObject( new Kurio(), 800, 410 );
 
 
+
         addObject( new Mariko(), 40, 170 );
         //addObject( new Kurio(), 740, 410 );
+
+        addObject( new Mariko(), 40, 370 );
+        addObject( new sord(), 0, 360 );
         addObject( new flag(), 740, 410 );
+        
+        //kurioのランダム生成
+        int kurio_count = 3;
+        for(int i=0; i<kurio_count; i++)
+        {
+            int A = 100;
+            int B = 800;
+            int C = A + (int)(Math.random()*((B-A)+1));
+            addObject( new Kurio(), C, 410 );
+        }
+        /*
+        //hardmode
+        int hanekurio_count = 2;
+        for(int i=0; i<hanekurio_count; i++)
+        {
+            int A = 100;
+            int B = 800;
+            int C = A + (int)(Math.random()*((B-A)+1));
+            int D = 50;
+            int E = 300;
+            int F = D + (int)(Math.random()*((E-D)+1));
+            addObject( new hanekurio(), C, F );
+        }
+        */
 
     }
 
