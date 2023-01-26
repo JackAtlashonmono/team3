@@ -35,7 +35,7 @@ public class MyWorld extends World
         addObject( new flag(), 740, 410 );
         
         //kurioのランダム生成
-        int kurio_count = 80;
+        int kurio_count = 3;
         for(int i=0; i<kurio_count; i++)
         {
             int A = 120;
