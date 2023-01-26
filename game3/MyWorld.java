@@ -21,13 +21,13 @@ public class MyWorld extends World
 
         //addObject( new Mariko(), 40, 410 );
         //addObject( new Kurio(), 740, 410 );
-        addObject( new Ground(), 400,450 );
+        addObject( new Ground(), 200,350 );
         //addObject( new Mariko(), 40, 400 );
         //addObject( new Kurio(), 800, 410 );
 
 
-        addObject( new Mariko(), 40, 370 );
-        addObject( new Kurio(), 740, 410 );
+        addObject( new Mariko(), 40, 170 );
+        //addObject( new Kurio(), 740, 410 );
         addObject( new flag(), 740, 410 );
 
     }

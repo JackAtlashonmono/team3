@@ -1,36 +1,16 @@
 #Greenfoot project file
 class.Ground.image=line_shibafu.png
 class.Kurio.image=Kurio\ (1).png
-<<<<<<< HEAD
-class.Mariko.image=Mariko\ (2)\ (1)\ (1).png
-=======
 class.Mariko.image=mariko__1___1_-removebg-preview\ (1).png
->>>>>>> f93876b3a5c549498cf41f3de217d4363bce3cd8
 class.MyWorld.image=bg_natural_mori\ (1).jpg
 class.flag.image=flag_white_sankaku1\ (1)\ (1).png
 dependency1.from=MyWorld
-dependency1.to=Mariko
+dependency1.to=Ground
 dependency1.type=UsesDependency
 dependency2.from=MyWorld
-dependency2.to=Kurio
+dependency2.to=Mariko
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
-<<<<<<< HEAD
-dependency3.to=Ground
-dependency3.type=UsesDependency
-dependency4.from=Mariko
-dependency4.to=Kurio
-dependency4.type=UsesDependency
-dependency5.from=Mariko
-dependency5.to=Ground
-dependency5.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=635
-package.numDependencies=5
-=======
 dependency3.to=flag
 dependency3.type=UsesDependency
 dependency4.from=Mariko
@@ -40,16 +20,18 @@ dependency5.from=Mariko
 dependency5.to=Kurio
 dependency5.type=UsesDependency
 dependency6.from=Mariko
-dependency6.to=flag
+dependency6.to=Ground
 dependency6.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
-height=635
-package.numDependencies=6
->>>>>>> f93876b3a5c549498cf41f3de217d4363bce3cd8
-package.numTargets=4
+dependency7.from=Mariko
+dependency7.to=flag
+dependency7.type=UsesDependency
+editor.fx.0.height=1047
+editor.fx.0.width=1157
+editor.fx.0.x=558
+editor.fx.0.y=0
+height=873
+package.numDependencies=7
+package.numTargets=5
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -63,50 +45,44 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-<<<<<<< HEAD
-simulation.speed=53
-target1.height=50
-target1.name=Ground
-=======
 simulation.speed=66
 target1.height=50
 target1.name=flag
->>>>>>> f93876b3a5c549498cf41f3de217d4363bce3cd8
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
 target1.x=0
 target1.y=0
-target2.height=70
-target2.name=Kurio
+target2.height=50
+target2.name=Ground
 target2.showInterface=false
 target2.type=ClassTarget
-target2.width=120
+target2.width=80
 target2.x=0
 target2.y=0
 target3.height=70
-target3.name=Mariko
+target3.name=Kurio
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
-target4.height=50
-target4.name=MyWorld
+target4.height=70
+target4.name=Mariko
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=80
+target4.width=120
 target4.x=0
 target4.y=0
+target5.height=50
+target5.name=MyWorld
+target5.showInterface=false
+target5.type=ClassTarget
+target5.width=80
+target5.x=0
+target5.y=0
 version=3.0.0
-<<<<<<< HEAD
-width=1045
-world.lastInstantiated=MyWorld
-xPosition=0
-yPosition=0
-=======
 width=1067
 world.lastInstantiated=MyWorld
-xPosition=696
-yPosition=258
->>>>>>> f93876b3a5c549498cf41f3de217d4363bce3cd8
+xPosition=61
+yPosition=42

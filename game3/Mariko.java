@@ -12,19 +12,20 @@ public class Mariko extends Actor
      * Act - do whatever the Mariko wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private int gravity;
+    private double gravity = 0.1;
+    private double vSpeed = 0;
+    
     public void act()
     {
-         gravity--;
-         setLocation(getX(), getY() - gravity);
-         checkForJump();
+        checkFalling();
+        
         // Add your action code here
         Actor actor = getOneIntersectingObject( Kurio.class );
         Actor under = getOneIntersectingObject( Ground.class );
-        if( under != null ){
-            //床とぶつかった時の処理
+        /*if( under != null ){
+            //床と ぶつかった時の処理
             
-        }
+        }*/
         if( actor != null ){
             //Kurioとぶつかった時の処理
             ((MyWorld)getWorld()).showTextEx("GAME OVER", 400, 200, 128, true, Color.RED );
@@ -44,19 +45,30 @@ public class Mariko extends Actor
         if( Greenfoot.isKeyDown( "D" ) ){
             setRotation(0);
             move(3);
-        } 
-        
+        }
+        if( onGround() == true && Greenfoot.isKeyDown("space")){
+            vSpeed = -8;
+            fall();
+        }
     }
-    private void checkForJump()
-    {
-
-        if( Greenfoot.isKeyDown("space"))
-            gravity = 15; // this will make the character jump
-
-    }
+   
     public boolean onGround()
     {
         Object under = getOneObjectAtOffset(0, getImage().getHeight()/2 + 2, Ground.class);
         return under != null;
+    }
+    
+    private void fall()
+    {
+        setLocation(getX(), getY() + (int)vSpeed);
+        vSpeed = vSpeed + gravity;
+    }
+    
+    public void checkFalling()
+    {
+        if(onGround() == false)
+        {
+            fall();
+        }
     }
 }
