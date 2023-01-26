@@ -8,12 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class sord extends Actor
 {
-    private int gravity;
+    private double gravity = 0.1;
+    private double vSpeed = 0;
     public void act()
     {
-         gravity--;
+        checkFalling();
+        /* gravity--;
          setLocation(getX(), getY() - gravity);
-         checkForJump();
+         checkForJump();*/
         // Add your action code here
         Actor actor = getOneIntersectingObject( Kurio.class );
         Actor actor2 = getOneIntersectingObject( hanekurio.class );
@@ -34,13 +36,35 @@ public class sord extends Actor
             setRotation(0);
             move(3);
         } 
-        
+        if( onGround() == true && Greenfoot.isKeyDown("space")){
+            vSpeed = -8;
+            fall();
+        }
     }
-    private void checkForJump()
+    /*private void checkForJump()
     {
 
         if( Greenfoot.isKeyDown("space"))
             gravity = 15; // this will make the character jump
 
+    }*/
+    public boolean onGround()
+    {
+        Object under = getOneObjectAtOffset(0, getImage().getHeight()/2 + 2, Ground.class);
+        return under != null;
+    }
+    
+    private void fall()
+    {
+        setLocation(getX(), getY() + (int)vSpeed);
+        vSpeed = vSpeed + gravity;
+    }
+    
+    public void checkFalling()
+    {
+        if(onGround() == false)
+        {
+            fall();
+        }
     }
 }
